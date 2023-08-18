@@ -1,0 +1,21 @@
+.features {
+	padding-right: 38px;
+}
+
+.features img {
+	margin-bottom: 10px;
+}
+.features__title {
+	color: var(--grayscale-07, #fff);
+	font-feature-settings: 'liga' off;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 106%; /* 33.92px */
+	margin-bottom: 16px;
+}
+.features__descrption {
+	color: var(--grayscale-07, #fff);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: normal;
+}

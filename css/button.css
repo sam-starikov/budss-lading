@@ -1,0 +1,15 @@
+.button {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	height: 57px;
+	width: 182px;
+	border-radius: 16px;
+	color: var(--grayscale-07, #fff);
+	background: var(--primary-01, #954ced);
+}
+
+.button:hover {
+	border: 2px solid var(--primary-01, #954ced);
+	background: var(--primary-04, rgba(149, 76, 237, 0.2));
+}

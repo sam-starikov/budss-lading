@@ -1,0 +1,35 @@
+.about {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.about__title {
+	color: var(--grayscale-07, #fff);
+	font-feature-settings: 'liga' off;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 106%; /* 42.4px */
+	margin-bottom: 30px;
+}
+
+.about__description {
+	color: var(--grayscale-07, #fff);
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 120%; /* 28.8px */
+	width: 268px;
+}
+
+.about__description span {
+	background: var(--primary-01, #954ced);
+	border-radius: 16px;
+}
+
+.about__typography {
+	margin-bottom: 40px;
+}
+
+.about__features:not(:last-child) {
+	margin-bottom: 60px;
+}
