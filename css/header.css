@@ -120,4 +120,11 @@
 	.header__button {
 		display: inline-block;
 	}
+	.header__logo span {
+		font-size: 37px;
+	}
+	.header__logo img {
+		width: 51px;
+		height: 51px;
+	}
 }

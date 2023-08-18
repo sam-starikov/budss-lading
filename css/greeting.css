@@ -1,7 +1,27 @@
 .greeting {
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 }
-.greeting img {
+.greeting__img-container {
 	margin-bottom: 40px;
+}
+.greeting__img-container img {
+	max-width: 100%;
+}
+
+/* MEDIA */
+
+@media (min-width: 767px) {
+	.greeting {
+		justify-content: space-between;
+		flex-direction: row;
+		margin-bottom: 100px;
+	}
+	.greeting img {
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 1040px) {
 }
