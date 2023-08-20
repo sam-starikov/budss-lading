@@ -10,7 +10,5 @@ let burger = document.querySelector('.header__burger')
 burger.addEventListener('click', function clickOnBurger() {
 	menu.classList.toggle('active')
 	burger.classList.toggle('active')
-	// document.body.classList.toggle('lock')
+	document.body.classList.toggle('lock')
 })
-
-console.log(burger)
