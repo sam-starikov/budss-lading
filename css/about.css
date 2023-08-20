@@ -30,9 +30,6 @@
 /* MEDIA */
 
 @media (min-width: 766px) {
-	.about {
-		margin-bottom: 100px;
-	}
 	.about__title {
 		font-size: 64px;
 	}

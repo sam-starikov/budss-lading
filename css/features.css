@@ -32,7 +32,6 @@
 @media (min-width: 1020px) {
 	.features {
 		padding: 0;
-
 		display: grid;
 		justify-content: center;
 		grid-template-rows: repeat(2, 350px);
