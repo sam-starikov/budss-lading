@@ -13,13 +13,25 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&family=Outfit:wght@300;400;500;600;700&display=swap"
 			rel="stylesheet" />
-
 		<title>Budss</title>
 	</head>
+
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<div class="container">
+				<div class="header__container container">
+					<div class="header__top">
+						<nav class="header__select-client select-client">
+							<ul class="select-client__list">
+								<li class="select-client__item active">
+									<a class="select-client__link" href="#">For Business</a>
+								</li>
+								<li class="select-client__item">
+									<a class="select-client__link" href="#">For Customers</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
 					<div class="header__body">
 						<a href="#" class="header__logo">
 							<img
@@ -49,14 +61,6 @@
 								</li>
 							</ul>
 						</nav>
-						<!-- <div class="header__navigation">
-							<nav>
-								<ul>
-									<li><a href="#">For Business</a></li>
-									<li><a href="#">For Customers</a></li>
-								</ul>
-							</nav>
-						</div> -->
 					</div>
 				</div>
 			</header>
@@ -125,7 +129,6 @@
 							<video
 								class="video__item"
 								preload
-								playsinline
 								playsinline
 								muted
 								loop
