@@ -8,7 +8,7 @@ const headerScroll = document.querySelector('.header__body')
 window.addEventListener('scroll', () => {
 	if (window.scrollY > 50) {
 		headerScroll.style.cssText =
-			'transition: transform 0.3s ease; transform: translateY(-55%)'
+			'transition: transform 0.2s; transform: translateY(-55%)'
 	} else {
 		headerScroll.style.cssText = 'transition:  transform 0.5s;'
 	}

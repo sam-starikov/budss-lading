@@ -1,14 +1,17 @@
 @import url('./button.css');
 @import url('./container.css');
 @import url('./wrapper.css');
-@import url('./page.css');
-@import url('./typography.css');
-@import url('./about.css');
-@import url('./features.css');
-@import url('./greeting.css');
-@import url('./video.css');
 
 /* HEADER */
 @import url('./header/header.css');
 @import url('./header/menu.css');
 @import url('./header/header-tabs.css');
+
+/* PAGE */
+@import url('./page/page.css');
+@import url('./typography.css');
+@import url('./page/about.css');
+@import url('./page/features.css');
+@import url('./page/greeting.css');
+@import url('./page/video.css');
+@import url('./page/animaton.css');
