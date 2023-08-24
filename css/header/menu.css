@@ -2,11 +2,9 @@
 	position: fixed;
 	top: -100%;
 	left: 0;
-	width: 100%;
+	right: 0;
 	height: 100vh;
-
 	overflow: auto;
-
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: column;
@@ -23,6 +21,8 @@
 
 .menu__button {
 	width: 100% !important;
+}
+.menu__list {
 }
 
 .menu__list :not(:last-child) {

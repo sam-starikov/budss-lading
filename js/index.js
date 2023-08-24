@@ -1,6 +1,18 @@
 let menu = document.querySelector('.menu')
 let burger = document.querySelector('.header__burger')
-let selectClient = document.querySelectorAll('.select-client__item')
+let headerTabs = document.querySelectorAll('.header-tabs__item')
+const headerScroll = document.querySelector('.header__body')
+
+/* HEADER_SCROLL */
+
+window.addEventListener('scroll', () => {
+	if (window.scrollY > 50) {
+		headerScroll.style.cssText =
+			'transition: transform 0.3s ease; transform: translateY(-55%)'
+	} else {
+		headerScroll.style.cssText = 'transition:  transform 0.5s;'
+	}
+})
 
 /* BURGER */
 
@@ -10,12 +22,13 @@ burger.addEventListener('click', function clickOnBurger() {
 	document.body.classList.toggle('lock')
 })
 
-/* SELECT_CLIENT */
+/* SELECT_CLIENT_TAB */
 
-selectClient.forEach(item => {
-	item.addEventListener('click', () => {
-		selectClient.forEach(elem => elem.classList.remove('active'))
-		item.classList.add('active')
+headerTabs.forEach(headerTabsItems => {
+	headerTabsItems.addEventListener('click', function clickOnTab() {
+		headerTabs.forEach(headerTabsElem =>
+			headerTabsElem.classList.remove('active')
+		)
+		headerTabsItems.classList.add('active')
 	})
-	// setInterval(() => item.classList.toggle('active'), 2000)
 })
