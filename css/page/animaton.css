@@ -10,6 +10,7 @@
 	flex-direction: column;
 	justify-content: space-around;
 	height: 100%;
+	width: 100%;
 	overflow: hidden;
 }
 .animation__item {
@@ -21,7 +22,7 @@
 	line-height: 106%;
 
 	animation-name: text-move;
-	animation-duration: 5s;
+	animation-duration: 10s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
@@ -29,7 +30,7 @@
 .animation__item:nth-child(2) {
 	color: var(--primary-02, #a64ced);
 	animation-name: text-move;
-	animation-duration: 2.5s;
+	animation-duration: 5s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-direction: reverse;

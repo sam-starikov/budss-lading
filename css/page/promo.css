@@ -1,24 +1,24 @@
-.greeting {
+.promo {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
-.greeting__img-container {
+.promo__img-container {
 	margin-bottom: 40px;
 }
-.greeting__img-container img {
+.promo__img-container img {
 	max-width: 100%;
 }
 
 /* MEDIA */
 
 @media (min-width: 767px) {
-	.greeting {
+	.promo {
 		justify-content: space-between;
 		flex-direction: row;
 		margin-bottom: 100px;
 	}
-	.greeting img {
+	.promo img {
 		margin-bottom: 0;
 	}
 }

@@ -1,0 +1,13 @@
+@import url(./imports.css);
+
+body {
+	background: var(--grayscale-01, #181818);
+
+	height: 100%;
+	width: 100%;
+
+	font-family: 'Outfit', sans-serif;
+	font-size: 100%;
+	line-height: 1.2;
+	font-size: 14px;
+}
