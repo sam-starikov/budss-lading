@@ -1,0 +1,181 @@
+/* Reset and base styles  */
+@import url(https://fonts.googleapis.com/css?family=Outfit:300,regular,500,600,700);
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+/* colors */
+/* typograpphy */
+/* fonst */
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  -webkit-font-feature-settings: "liga" off;
+          font-feature-settings: "liga" off;
+  line-height: 1.57;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+a {
+  color: #ffffff;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #954ced;
+  padding: 16px 30px;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.btn-primary:focus {
+  border: 4px solid #ba8bf3;
+}
+.btn-primary:hover {
+  background-color: #181818;
+}
+.btn-primary:active {
+  background-color: #7b31d4;
+  border: none;
+}
+.btn-primary:disabled {
+  background-color: #b9b9b9;
+}
+
+.btn-secondary {
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #954ced;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px 30px;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.btn-secondary:focus {
+  border: 4px solid #954ced;
+}
+.btn-secondary:hover {
+  background-color: rgba(149, 76, 237, 0.2);
+}
+.btn-secondary:active {
+  border: 2px solid #a64ced;
+}
+.btn-secondary:disabled {
+  border: 2px solid #b9b9b9;
+  color: #b9b9b9;
+  background-color: transparent;
+}

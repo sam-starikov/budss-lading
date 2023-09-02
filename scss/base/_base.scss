@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit:300,regular,500,600,700);
+@import './mixin';
+
+body {
+	font-family: $outfit;
+	font-size: 14px;
+	font-feature-settings: 'liga' off;
+	line-height: 1.57;
+	color: $grayscale-07;
+	background-color: $grayscale-00;
+}
+
+a {
+	color: $grayscale-07;
+}
+
+.btn-primary {
+	color: $grayscale-07;
+	background-color: $primary-01;
+
+	&:focus {
+		border: 4px solid $primary-03;
+	}
+	&:hover {
+		background-color: $grayscale-01;
+	}
+	&:active {
+		background-color: $primary-00;
+		border: none;
+	}
+	&:disabled {
+		background-color: $grayscale-03;
+	}
+
+	@include btn;
+}
+
+.btn-secondary {
+	color: $grayscale-07;
+	background-color: transparent;
+	border: 2px solid $primary-01;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+	&:focus {
+		border: 4px solid $primary-01;
+	}
+	&:hover {
+		background-color: $primary-04;
+	}
+	&:active {
+		border: 2px solid $primary-02;
+	}
+	&:disabled {
+		border: 2px solid $grayscale-03;
+		color: $grayscale-03;
+		background-color: transparent;
+	}
+
+	@include btn;
+}
