@@ -1,4 +1,22 @@
+/* settings */
 @import './base/reset';
 @import './base/vars';
 @import './base/base';
 @import './base/mixin';
+
+/* blocks */
+@import './blocks/header';
+@import './blocks/nav-header';
+@import './blocks/btn';
+@import './blocks/content';
+@import './blocks/hero';
+@import './blocks/about';
+@import './blocks/features';
+@import './blocks/how-works';
+@import './blocks/video';
+@import './blocks/progress';
+@import './blocks/why-buds';
+@import './blocks/card';
+@import './blocks/feedback';
+@import './blocks/footer';
+@import './blocks/nav-footer';

@@ -30,6 +30,7 @@ $T3_Bold_64: 64px;
 $T4_Bold_48: 48px;
 $T5_SemiBold_48: 48px;
 $T6_Bold_40: 40px;
+$T7_Bold_32: 32px;
 
 $S1_SemiBold_36: 36px;
 $S2_SemiBold_24: 24px;
@@ -50,3 +51,18 @@ $B7_Regular_12: 12px;
 /* fonst */
 
 $outfit: 'Outfit', sans-serif;
+
+/* transition */
+
+$transition: all 0.2s linear;
+
+/* media */
+
+$laptop: 999px; /* задать стандарты */
+$tablet: 609px;
+$mobile: 430px;
+
+/* card */
+
+$card-small-w: 547px;
+$card-small-h: 362px;

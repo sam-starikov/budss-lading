@@ -1,0 +1,15 @@
+.features {
+	display: grid;
+	grid-template-columns: repeat(2, min(301px));
+	column-gap: 85px;
+	gap: 70px;
+}
+
+.features__img {
+	width: 100px;
+	margin-bottom: 10px;
+}
+
+.features__title {
+	margin-bottom: 20px;
+}

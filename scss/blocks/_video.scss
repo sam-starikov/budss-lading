@@ -1,0 +1,13 @@
+.video {
+	position: relative;
+	z-index: -1;
+	width: 308px;
+	height: 623px;
+	padding: 10px;
+	border-radius: 49px;
+}
+
+video {
+	object-fit: contain;
+	object-position: center;
+}

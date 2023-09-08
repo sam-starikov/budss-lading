@@ -1,0 +1,39 @@
+.about {
+	width: 100%;
+	max-width: 100%;
+	padding-bottom: 36px;
+	background-image: url(/img/about/bg-decor.svg);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+.about__body {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 131px;
+}
+
+.about__title {
+	margin-bottom: 80px;
+}
+
+.about__sub-title-box {
+	width: 410px;
+}
+
+.about__sub-title {
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: -1;
+		width: 359px;
+		height: 34.438px;
+		transform: rotate(-1.693deg) translateX(8px);
+		border-radius: 30px;
+		background: $primary-02;
+	}
+}
