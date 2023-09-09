@@ -5,7 +5,6 @@
 	column-gap: 20px;
 }
 .nav-footer__item {
-	text-decoration: underline;
 	transition: transform 0.25s ease-in;
 
 	&:hover,
@@ -15,5 +14,6 @@
 	}
 }
 .nav-footer__link {
+	@include body-light-14-underline;
 	color: $grayscale-03;
 }

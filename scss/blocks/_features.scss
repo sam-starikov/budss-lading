@@ -1,7 +1,7 @@
 .features {
 	display: grid;
-	grid-template-columns: repeat(2, min(301px));
-	column-gap: 85px;
+	grid-template-columns: repeat(2, 1fr);
+
 	gap: 70px;
 }
 

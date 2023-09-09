@@ -20,21 +20,3 @@
 	background-size: cover;
 	background-position: center;
 }
-
-@mixin mediaLaptop {
-	@media (max-width: $laptop) {
-		@content;
-	}
-}
-
-@mixin mediaTablet {
-	@media (max-width: $tablet) {
-		@content;
-	}
-}
-
-@mixin mediaMobile {
-	@media (max-width: $mobile) {
-		@content;
-	}
-}

@@ -15,14 +15,16 @@
 }
 
 .nav-header__link.active {
-	display: inline-block;
 	color: $grayscale-07;
 	background-color: $grayscale-01;
 	border-radius: 20px 20px 0px 0px;
 }
 
-@media (max-width: $mobile) {
-	.nav-header__list {
-		justify-content: space-between;
+/* media */
+
+@include xs-mini {
+	.nav-header__link {
+		padding: 9px 35px;
+		font-size: $B4_Regular_14;
 	}
 }

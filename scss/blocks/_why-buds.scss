@@ -5,7 +5,6 @@
 
 .why-budss__body {
 	display: flex;
-
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 20px;
@@ -36,7 +35,7 @@
 	}
 }
 
-@include mediaMobile {
+@include xs {
 	.why-budss__title {
 		font-size: $T6_Bold_40;
 		font-weight: 700;

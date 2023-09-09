@@ -2,11 +2,11 @@
 @import './mixin';
 
 body {
+	color: $grayscale-07;
 	font-family: $outfit;
 	font-size: 14px;
 	font-feature-settings: 'liga' off;
 	line-height: 1.57;
-	color: $grayscale-07;
 	background-color: $grayscale-01;
 }
 
@@ -15,13 +15,11 @@ a {
 	color: $grayscale-00;
 	font-size: $B1_Medium_16;
 	font-weight: 500;
-	transition: $transition;
 	cursor: pointer;
 
-	&:active {
+	&:active,
+	:focus {
 		color: $grayscale-07;
-	}
-	&:focus {
 	}
 }
 
@@ -43,8 +41,8 @@ a {
 	padding: 0 15px;
 	margin: 0 auto;
 }
-/* none */
 
+/* none */
 .none {
 	display: none;
 }
@@ -52,79 +50,77 @@ a {
 /* TYPOGRAPHY */
 
 /* title */
-
-.title-bold-128 {
+@mixin title-bold-128 {
 	font-size: $T1_Bold_128;
 	font-weight: 700;
 	line-height: 1.06;
 }
 
-.title-bold-64 {
+@mixin title-bold-96 {
+	font-size: $T2_Bold_96;
+	font-weight: 800;
+	line-height: 1.06;
+}
+
+@mixin title-bold-64 {
 	font-size: $T3_Bold_64;
 	font-weight: 700;
 	line-height: 1.06;
 }
 
-.title-bold-96 {
-	font-size: $T2_Bold_96;
-	font-weight: 800;
-	line-height: 1.06;
-
-	&_black {
-		font-size: $T2_Bold_96;
-		font-weight: 800;
-		line-height: 1.06;
-		color: $grayscale-00;
-	}
-
-	.title-bold-64 {
-		font-size: $T3_Bold_64;
-		font-weight: 700;
-		line-height: 1.06;
-	}
-}
-
-.title-semi-bold-48 {
+@mixin title-semi-bold-48 {
 	font-size: $T5_SemiBold_48;
 	font-weight: 600;
-	line-height: 1.06;
 	line-height: normal;
 }
 
+@mixin title-bold-40 {
+	font-size: $T6_Bold_40;
+	font-weight: 700;
+	line-height: 1.06;
+}
+
 /* subtitle */
-.sub-title-semibold-36 {
+@mixin sub-title-semibold-36 {
 	font-size: $S1_SemiBold_36;
 	font-weight: 600;
 	line-height: normal;
 }
 
-.sub-title-semibold-24 {
+@mixin sub-title-semibold-24 {
 	font-size: $S2_SemiBold_24;
 	font-weight: 600;
 	line-height: 1.2;
 }
 
-.sub-title-regular-24 {
+@mixin sub-title-regular-24 {
 	font-size: $S3_Regular_24;
 	font-weight: 400;
 	line-height: 1.2;
 }
 
-.sub-title-regular-20 {
+@mixin sub-title-regular-20 {
 	font-size: $S6_Regular_20;
 	font-weight: 400;
 	line-height: 1.2;
-
-	&_black {
-		color: $grayscale-00;
-		font-size: $T2_Bold_96;
-		font-weight: 800;
-		line-height: 1.06;
-	}
 }
 
-.body-light-14 {
-	font-size: 14px;
+@mixin sub-title-light-20 {
+	font-size: $S7_Light_20;
 	font-weight: 300;
 	line-height: 1.4;
+}
+
+/* body */
+@mixin body-regular-16 {
+	font-size: $B2_Regular_16;
+	font-weight: 400;
+	line-height: normal;
+}
+
+@mixin body-light-14-underline {
+	font-size: $B6_Light_14_Underline;
+	font-weight: 300;
+	line-height: 1.4;
+	text-decoration: underline !important;
 }

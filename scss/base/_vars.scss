@@ -52,15 +52,14 @@ $B7_Regular_12: 12px;
 
 $outfit: 'Outfit', sans-serif;
 
-/* transition */
-
-$transition: all 0.2s linear;
-
 /* media */
 
-$laptop: 999px; /* задать стандарты */
-$tablet: 609px;
-$mobile: 430px;
+$lg: 1280px; /* задать стандарты */
+$lg-md: 1024px;
+$md: 992px;
+$sm: 768px;
+$xs: 576px;
+$xs-mini: 400px;
 
 /* card */
 

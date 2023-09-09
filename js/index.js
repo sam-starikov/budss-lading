@@ -1,7 +1,11 @@
 const nav = document.querySelector('nav')
 
-if (nav.clientWidth <= 425) {
-	nav.classList.toggle('container')
-}
+window.addEventListener('resize', () => {
+	if (window.innerWidth <= 376) {
+		nav.classList.remove('container')
+	} else {
+		nav.classList.add('container')
+	}
+})
 
-console.log(document.body.clientWidth, window.innerWidth, window.pageXOffset)
+console.log()

@@ -21,7 +21,7 @@
 
 /* media */
 
-@include mediaTablet {
+@include sm {
 	.progress__row {
 		flex-direction: column;
 		align-items: flex-start;
@@ -37,7 +37,7 @@
 	}
 }
 
-@include mediaMobile {
+@include xs {
 	.progress {
 		padding: 40px 0;
 	}

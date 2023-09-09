@@ -14,6 +14,7 @@
 }
 
 .about__title {
+	@include title-bold-96;
 	margin-bottom: 80px;
 }
 
