@@ -34,28 +34,30 @@
 		@include title-bold-64;
 	}
 	.hero__sub-title {
-		@include sub-title-light-20;
+		@include sub-title-regular-20;
 	}
 }
 
 @include sm {
 	.hero__title {
-		@include title-semi-bold-48;
+		@include title-bold-48;
 	}
 }
 
 @include xs {
-	.hero__body {
-		flex-direction: column;
-		padding: 50px 0 0 0;
-		margin-bottom: 40px;
-	}
 	.hero__title {
 		@include title-bold-40;
 	}
 	.hero__sub-title {
 		@include body-regular-16;
 	}
+
+	.hero__body {
+		flex-direction: column;
+		padding: 50px 0 0 0;
+		margin-bottom: 40px;
+	}
+
 	.hero__btn {
 		width: 100%;
 		max-width: 343px;

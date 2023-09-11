@@ -1,7 +1,8 @@
 .footer {
+	flex-grow: 1;
 	width: 100%;
-	height: 188px;
-	padding: 40px 0 20px;
+	max-width: 100%;
+	min-height: 188px;
 }
 
 .footer__body {
@@ -54,7 +55,7 @@
 }
 .footer__line {
 	width: 100%;
-	height: 1px;
+	height: 2px;
 	margin-bottom: 20px;
 	background-color: $grayscale-02;
 }
@@ -86,4 +87,52 @@
 }
 
 .footer__copyright {
+}
+
+/* footer mobile */
+
+.footer__mobile {
+	height: 650px;
+	padding: 20px 0;
+}
+
+.footer__logo-mobile {
+	margin-bottom: 40px;
+}
+.footer__nav {
+	margin-bottom: 40px;
+}
+.footer__nav-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	row-gap: 16px;
+}
+.footer__nav-item {
+}
+.footer__nav-link {
+}
+.footer__btn {
+	margin-bottom: 40px;
+}
+
+.footer__store-list {
+}
+.footer__store-item {
+	margin-bottom: 20px;
+}
+.footer__store-link {
+}
+.footer__store-img {
+}
+
+.footer__line-mobile {
+	margin-bottom: 10px;
+}
+
+.footer__copyright-mobile {
+	color: $grayscale-03;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.5;
 }

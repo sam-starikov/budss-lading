@@ -1,6 +1,6 @@
 .feedback {
 	text-align: center;
-	width: 100%;
+
 	padding: 100px 0;
 	color: $grayscale-00;
 	background: $grayscale-06;
@@ -38,14 +38,12 @@
 }
 
 .feedback__socials-icons {
-	flex: 1 0 auto;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(4, 1fr);
 }
 
 .feedback__icon-social:nth-child(3),
 .feedback__icon-social:nth-child(4) {
-	transform: translate(50%);
 }
 
 .feedback__brands-list {

@@ -1,18 +1,18 @@
 /* settings */
 @import './base/reset';
 @import './base/vars';
+@import './base/typography';
+
 @import './base/base';
 @import './base/mixin';
 @import './base/media';
 
 /* blocks */
 @import './blocks/header';
-@import './blocks/nav-header';
 @import './blocks/btn';
 @import './blocks/content';
 @import './blocks/hero';
 @import './blocks/about';
-@import './blocks/features';
 @import './blocks/how-works';
 @import './blocks/video';
 @import './blocks/progress';
