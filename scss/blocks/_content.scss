@@ -1,8 +1,18 @@
 .content {
-	max-width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	flex-shrink: 1;
+    // max-width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: space-between;
+    // flex-shrink: 1;
+
+    &__hero {
+        margin-bottom: 100px;
+    }
+    &__about {
+        margin-bottom: 100px;
+    }
+    &__how-works {
+        margin-bottom: 100px;
+    }
 }

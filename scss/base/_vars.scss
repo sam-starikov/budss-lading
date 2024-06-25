@@ -1,67 +1,68 @@
 /* colors */
+:root {
+    --grayscale-00: #000000;
+    --grayscale-01: #181818;
+    --grayscale-02: #444444;
+    --grayscale-03: #b9b9b9;
+    --grayscale-04: #cfcfcf;
+    --grayscale-05: #e4e4e4;
+    --grayscale-06: #f5f5f5;
+    --grayscale-07: #ffffff;
 
-$grayscale-00: #000000;
-$grayscale-01: #181818;
-$grayscale-02: #444444;
-$grayscale-03: #b9b9b9;
-$grayscale-04: #cfcfcf;
-$grayscale-05: #e4e4e4;
-$grayscale-06: #f5f5f5;
-$grayscale-07: #ffffff;
+    --primary-00: #7b31d4;
+    --primary-01: #954ced;
+    --primary-02: #a64ced;
+    --primary-03: #ba8bf3;
+    --primary-04: #954ced33;
 
-$primary-00: #7b31d4;
-$primary-01: #954ced;
-$primary-02: #a64ced;
-$primary-03: #ba8bf3;
-$primary-04: #954ced33;
+    --secondary-01: #2fdbbc;
+    --secondary-02: #ffaa4c;
+    --secondary-03: #c1db2f;
 
-$secondary-01: #2fdbbc;
-$secondary-02: #ffaa4c;
-$secondary-03: #c1db2f;
+    --additional-01: #ff6c2d;
+    --additional-02: #ec1211;
 
-$additional-01: #ff6c2d;
-$additional-02: #ec1211;
+    /* typograpphy */
 
-/* typograpphy */
+    --T1_Bold_128: 128px;
+    --T2_Bold_96: 96px;
+    --T3_Bold_64: 64px;
+    --T4_Bold_48: 48px;
+    --T5_SemiBold_48: 48px;
+    --T6_Bold_40: 40px;
+    --T7_Bold_32: 32px;
 
-$T1_Bold_128: 128px;
-$T2_Bold_96: 96px;
-$T3_Bold_64: 64px;
-$T4_Bold_48: 48px;
-$T5_SemiBold_48: 48px;
-$T6_Bold_40: 40px;
-$T7_Bold_32: 32px;
+    --S1_SemiBold_36: 36px;
+    --S2_SemiBold_24: 24px;
+    --S3_Regular_24: 24px;
+    --S4_SemiBold_20: 20px;
+    --S5_Medium_20: 20px;
+    --S6_Regular_20: 20px;
+    --S7_Light_20: 20px;
 
-$S1_SemiBold_36: 36px;
-$S2_SemiBold_24: 24px;
-$S3_Regular_24: 24px;
-$S4_SemiBold_20: 20px;
-$S5_Medium_20: 20px;
-$S6_Regular_20: 20px;
-$S7_Light_20: 20px;
+    --B1_Medium_16: 16px;
+    --B2_Regular_16: 16px;
+    --B3_Medium_14: 14px;
+    --B4_Regular_14: 14px;
+    --B5_Light_14: 14px;
+    --B6_Light_14_Underline: 14px;
+    --B7_Regular_12: 12px;
 
-$B1_Medium_16: 16px;
-$B2_Regular_16: 16px;
-$B3_Medium_14: 14px;
-$B4_Regular_14: 14px;
-$B5_Light_14: 14px;
-$B6_Light_14_Underline: 14px;
-$B7_Regular_12: 12px;
+    /* fonst */
 
-/* fonst */
+    --outfit: 'Outfit', sans-serif;
 
-$outfit: 'Outfit', sans-serif;
+    /* media */
 
-/* media */
+    --lg: 1280px; /* задать стандарты */
+    --lg-md: 1024px;
+    --md: 992px;
+    --sm: 768px;
+    --xs: 576px;
+    --xs-mini: 400px;
 
-$lg: 1280px; /* задать стандарты */
-$lg-md: 1024px;
-$md: 992px;
-$sm: 768px;
-$xs: 576px;
-$xs-mini: 400px;
+    /* card */
 
-/* card */
-
-$card-small-w: 547px;
-$card-small-h: 362px;
+    --card-small-w: 547px;
+    --card-small-h: 362px;
+}

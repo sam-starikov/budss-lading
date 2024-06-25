@@ -1,9 +1,7 @@
-const nav = document.querySelector('nav')
-
-window.addEventListener('resize', () => {
-	if (window.innerWidth <= 385) {
-		nav.classList.remove('container')
+window.addEventListener('resize', function removeContainer() {
+	if (window.scrollX + window.innerWidth <= 385) {
+		document.querySelector('nav').classList.remove('container')
 	} else {
-		nav.classList.add('container')
+		document.querySelector('nav').classList.add('container')
 	}
 })

@@ -1,52 +1,54 @@
 .progress {
-	width: 100%;
-	min-height: 222px;
-	padding: 40px 0;
-	text-align: center;
-	background-color: $primary-01;
-}
+    padding: 40px 0;
+    text-align: center;
+    background-color: var(--primary-01);
 
-.progress__row {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	column-gap: 100px;
-	row-gap: 40px;
-}
+    &__description {
+        @include sub-title-semibold-24;
+    }
 
-.progress__title {
-	margin-bottom: 16px;
-}
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 100px;
+        row-gap: 40px;
+    }
 
+    &__title {
+        @include title-bold-64;
+
+        margin-bottom: 16px;
+    }
+}
 /* media */
 
 @include sm {
-	.progress__row {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	.progress__item {
-		display: flex;
-		align-items: center;
-		column-gap: 10px;
-	}
+    .progress__row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .progress__item {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
 
-	.progress__title {
-		margin-bottom: 0;
-	}
+    .progress__title {
+        margin-bottom: 0;
+    }
 }
 
 @include xs {
-	.progress {
-		padding: 40px 0;
-	}
+    .progress {
+        padding: 40px 0;
+    }
 
-	.progress__title {
-		font-size: $T6_Bold_40;
-	}
-	.progress__description {
-		font-size: $S4_SemiBold_20;
-		line-height: normal;
-	}
+    .progress__title {
+        font-size: var(--T6_Bold_40);
+    }
+    .progress__description {
+        font-size: var(--S4_SemiBold_20);
+        line-height: normal;
+    }
 }

@@ -1,103 +1,109 @@
 .card {
-	&:first-child {
-		@include card;
+    &:first-child {
+        @include card;
 
-		.card__typography {
-			max-width: 364px;
-		}
+        .card__typography {
+            max-width: 364px;
+        }
 
-		justify-content: right;
-		background-image: url(/img/card/bg-card-1.jpg);
+        justify-content: right;
+        background-image: url('./../img/card/bg-card-1.jpg');
 
-		@include md {
-			justify-content: left;
-			padding: 20px 20px 0 20px;
-			height: 395px;
-			background-image: url(/img/card/mobile/bg-mobile-1.jpg);
-		}
-	}
-	&:nth-child(2) {
-		@include card;
+        @include md {
+            justify-content: left;
+            padding: 20px 20px 0 20px;
+            height: 395px;
+            background-image: url('./../img/card/mobile/bg-mobile-1.jpg');
+        }
+    }
+    &:nth-child(2) {
+        @include card;
 
-		padding: 40px 91px 0 40px;
-		max-width: $card-small-w;
-		max-height: $card-small-h;
-		background-image: url(/img/card/bg-card-2.jpg);
+        padding: 40px 91px 0 40px;
+        max-width: var(--card-small-w);
+        max-height: var(--card-small-h);
+        background-image: url('./../img/card/bg-card-2.jpg');
 
-		@include md {
-			padding: 20px 20px 0 20px;
-			background-image: url(/img/card/mobile/bg-mobile-2.jpg);
-		}
-	}
-	&:nth-child(3) {
-		@include card;
+        @include md {
+            padding: 20px 20px 0 20px;
+            background-image: url('./../img/card/mobile/bg-mobile-2.jpg');
+        }
+    }
+    &:nth-child(3) {
+        @include card;
 
-		padding: 40px 67px 0 40px;
-		max-width: $card-small-w;
-		max-height: $card-small-h;
-		background-image: url(/img/card/bg-card-3.jpg);
+        padding: 40px 67px 0 40px;
+        max-width: var(--card-small-w);
+        max-height: var(--card-small-h);
+        background-image: url('./../img/card/bg-card-3.jpg');
 
-		p {
-			max-width: 308px;
-		}
+        p {
+            max-width: 308px;
+        }
 
-		@include md {
-			padding: 20px 20px 0 20px;
-			background-image: url(/img/card/mobile/bg-mobile-3.jpg);
-		}
-	}
-	&:last-child {
-		@include card;
+        @include md {
+            padding: 20px 20px 0 20px;
+            background-image: url('./../img/card/mobile/bg-mobile-3.jpg');
+        }
+    }
+    &:last-child {
+        @include card;
 
-		background-image: url(/img/card/bg-card-4.jpg);
+        background-image: url('./../img/card/bg-card-4.jpg');
 
-		.card__typography {
-			max-width: 402px;
-		}
+        .card__typography {
+            max-width: 402px;
+        }
 
-		@include md {
-			padding: 20px 20px 0 20px;
-			height: 395px;
-			background-image: url(/img/card/mobile/bg-mobile-4.jpg);
-		}
-	}
-	&:hover,
-	:active,
-	:focus {
-		transform: scale(1.01);
-		filter: saturate(125%) contrast(115%);
-	}
+        @include md {
+            padding: 20px 20px 0 20px;
+            height: 395px;
+            background-image: url('./../img/card/mobile/bg-mobile-4.jpg');
+        }
+    }
+    &:hover,
+    :active,
+    :focus {
+        transform: scale(1.01);
+        filter: saturate(125%) contrast(115%);
+    }
+
+    color: var(--grayscale-00);
 }
 
 .card__body {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 .card__title {
-	margin-bottom: 20px;
+    @include title-semi-bold-48;
+    margin-bottom: 20px;
+}
+.card__sub-title {
+    @include sub-title-regular-20;
 }
 
 /* media */
 
 @include xs {
-	.card__title {
-		font-size: $T7_Bold_32;
-		font-weight: 700;
-		line-height: 1.06;
-		margin-bottom: 16px;
-	}
-	.card__sub-title {
-		font-size: $B2_Regular_16;
-		font-weight: 400;
-		line-height: 1.06;
-	}
+    .card__title {
+        font-size: var(--T7_Bold_32);
+        font-weight: 700;
+        line-height: 1.06;
+        margin-bottom: 16px;
+    }
+    .card__sub-title {
+        font-size: var(--B2_Regular_16);
+        font-weight: 400;
+        line-height: 1.06;
+    }
 }
 
 @media (max-width: 1150px) {
-	.card:nth-child(2),
-	.card:nth-child(3) {
-		height: 362px;
-		max-width: 733px;
-		background-position: bottom;
-	}
+    .card:nth-child(2),
+    .card:nth-child(3) {
+        height: 362px;
+        max-width: 733px;
+        background-position: bottom;
+    }
 }
