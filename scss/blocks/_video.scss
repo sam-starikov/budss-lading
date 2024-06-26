@@ -1,8 +1,8 @@
 .video {
     position: relative;
     z-index: -1;
-    width: 308px;
-    height: 623px;
+    width: clamp(228px, 12.821rem + 7.14vw, 308px);
+    height: clamp(461px, 25.92rem + 14.46vw, 623px);
     padding: 10px;
     border-radius: 50px;
 }

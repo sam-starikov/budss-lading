@@ -19,6 +19,7 @@
     &__animation-title {
         @include title-bold-128;
         color: var(--primary-02);
+
         animation-duration: 10s;
         animation-direction: reverse;
     }

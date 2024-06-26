@@ -2,7 +2,8 @@
 
 /* title */
 @mixin title-bold-128 {
-    font-size: var(--T1_Bold_128);
+    // font-size: var(--T1_Bold_128);
+    font-size: clamp(48px, 1.571rem + 7.14vw, 128px);
     font-weight: 700;
     line-height: 1.06;
 }
