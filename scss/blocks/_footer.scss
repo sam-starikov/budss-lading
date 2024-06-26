@@ -1,138 +1,42 @@
 .footer {
-    flex-grow: 1;
-    width: 100%;
-    max-width: 100%;
-    min-height: 188px;
-}
+    padding: 40px 0 20px;
 
-.footer__body {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-}
+    background-color: var(--grayscale-01);
 
-.footer__logo {
-    margin-right: 126px;
-}
+    &__body {
+        display: flex;
+        align-items: center;
+        gap: 126px;
 
-.footer__button {
-    margin-right: 40px;
-}
+        margin-bottom: 30px;
+        padding-bottom: 30px;
 
-.footer__marketplace {
-}
-
-.footer__marketplace-list {
-    display: flex;
-    column-gap: 20px;
-}
-
-.footer__marketplace-item {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: transform 0.25s ease-in, filter 0.25s ease-in;
-
-    &:first-child {
-        background-image: url(/img/footer/appstore.svg);
-    }
-    &:last-child {
-        background-image: url(/img/footer/googleplay.svg);
+        border-bottom: 1px solid var(--grayscale-07);
     }
 
-    &:hover,
-    :active,
-    :focus {
-        transform: scale(1.01);
-        filter: saturate(125%) contrast(115%);
+    &__links {
+        display: flex;
+        gap: 40px;
     }
-}
 
-.footer__marketplace-link {
-    display: inline-block;
-    width: 194px;
-    height: 57px;
-}
-.footer__line {
-    width: 100%;
-    height: 2px;
-    margin-bottom: 20px;
-    background-color: --grayscale-02;
-}
-
-.footer__nav {
-    margin-right: 126px;
-}
-
-.footer__nav-list {
-    display: flex;
-    column-gap: 40px;
-}
-
-.footer__nav-item {
-}
-
-.footer__nav-link {
-    color: --grayscale-07;
-    transition: transform 0.25s ease-in;
-
-    &:hover {
-        transform: scale(1.05);
+    &__controls {
+        display: flex;
+        column-gap: 20px;
     }
-}
 
-.footer__bottom {
-    display: flex;
-    justify-content: space-between;
-}
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-.footer__copyright {
-}
+        @include body-light-14-underline;
+    }
 
-/* footer mobile */
+    &__nav {
+    }
 
-.footer__mobile {
-    height: 650px;
-    padding: 20px 0;
-}
-
-.footer__logo-mobile {
-    margin-bottom: 40px;
-}
-.footer__nav {
-    margin-bottom: 40px;
-}
-.footer__nav-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    row-gap: 16px;
-}
-.footer__nav-item {
-}
-.footer__nav-link {
-}
-.footer__btn {
-    margin-bottom: 40px;
-}
-
-.footer__store-list {
-}
-.footer__store-item {
-    margin-bottom: 20px;
-}
-.footer__store-link {
-}
-.footer__store-img {
-}
-
-.footer__line-mobile {
-    margin-bottom: 10px;
-}
-
-.footer__copyright-mobile {
-    color: --grayscale-03;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.5;
+    &__nav-list {
+        display: flex;
+        gap: 20px;
+    }
 }
