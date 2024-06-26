@@ -59,10 +59,22 @@
         flex: 0 0 auto;
     }
 
-    &__brands-list {
+    &__brands {
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        column-gap: 90px;
+        flex-wrap: wrap;
+
+        column-gap: clamp(40px, 1.607rem + 4.46vw, 90px);
+        row-gap: 30px;
+
+        @include xs {
+            padding: 50px 0;
+        }
+
+        @media (max-width: 370px) {
+            flex-direction: column;
+        }
     }
 
     &__icon-social {
@@ -94,25 +106,6 @@
             @include md {
                 transform: translateY(60px);
             }
-        }
-    }
-}
-
-/* media */
-
-@include lg-md {
-    //
-    .feedback__brands-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        row-gap: 30px;
-        column-gap: 40px;
-
-        padding: 50px 0;
-
-        & li {
-            width: 100px;
         }
     }
 }

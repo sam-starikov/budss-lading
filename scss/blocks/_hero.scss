@@ -1,20 +1,20 @@
 .hero {
     &__body {
         display: flex;
-        padding: 82px 0 0 50px;
+        padding: clamp(50px, 2.554rem + 2.86vw, 82px) 0 0 clamp(0px, -0.893rem + 4.46vw, 50px);
     }
     &__typography {
-        width: 764px;
+        max-width: 764px;
     }
     &__title {
-        font-size: var(--T2_Bold_96);
+        font-size: clamp(40px, 1.5rem + 5vw, 96px);
         font-weight: 700;
         line-height: 1.06;
 
         margin-bottom: 20px;
     }
     &__sub-title {
-        font-size: var(--S6_Regular_20);
+        font-size: clamp(16px, 0.929rem + 0.36vw, 20px);
         line-height: 1.2;
 
         margin-bottom: 40px;
@@ -26,30 +26,10 @@
 
 /* media */
 
-// @include md {
-// 	.hero__title {
-// 		@include title-bold-64;
-// 	}
-//
-// }
-
-// @include sm {
-// 	.hero__title {
-// 		@include title-bold-48;
-// 	}
-// }
-
 @include xs {
-    // .hero__title {
-    // 	@include title-bold-40;
-    // }
-    // .hero__sub-title {
-    // 	@include body-regular-16;
-    // }
-
     .hero__body {
         flex-direction: column;
-        padding: 50px 0 0 0;
+
         margin-bottom: 40px;
     }
 

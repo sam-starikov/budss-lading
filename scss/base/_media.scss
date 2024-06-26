@@ -1,62 +1,53 @@
 @mixin xl-b {
-	@media (max-width: 1600px) {
-		@content;
-	}
+    @media (max-width: 1600px) {
+        @content;
+    }
 }
 
 @mixin xl {
-	@media (max-width: 1440px) {
-		@content;
-	}
+    @media (max-width: 1440px) {
+        @content;
+    }
 }
 
 @mixin lg {
-	@media (max-width: 1280px) {
-		@content;
-	}
+    @media (max-width: 1280px) {
+        @content;
+    }
 }
 
 @mixin lg-md {
-	@media (max-width: 1024px) {
-		@content;
-	}
+    @media (max-width: 1024px) {
+        @content;
+    }
 }
 
 @mixin md {
-	@media (max-width: 992px) {
-		@content;
-	}
+    @media (max-width: 992px) {
+        @content;
+    }
 }
 
 @mixin sm {
-	@media (max-width: 768px) {
-		@content;
-	}
+    @media (max-width: 768px) {
+        @content;
+    }
 }
 
 @mixin xs {
-	@media (max-width: 576px) {
-		@content;
-	}
+    @media (max-width: 576px) {
+        @content;
+    }
 }
 
 @mixin xs-mini {
-	@media (max-width: 400px) {
-		@content;
-	}
+    @media (max-width: 400px) {
+        @content;
+    }
 }
 
 @mixin xxs {
-	@media (max-width: 320px) {
-		@content;
-	}
+    @media (max-width: 320px) {
+        @content;
+    }
 }
-
-// ПРИМЕР
-// .main {
-//   padding: 0 15px;
-
-//   @include xs {
-//     padding: 0 10px;
-//   }
-// }

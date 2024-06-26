@@ -1,0 +1,48 @@
+.footer-mobile {
+    display: none;
+
+    &__logo {
+    }
+
+    &__nav {
+    }
+
+    &__nav-list {
+        display: grid;
+        gap: 16px;
+    }
+
+    &__nav-item {
+    }
+
+    &__nav-link {
+    }
+
+    &__btn {
+    }
+
+    &__store-list {
+        display: grid;
+        gap: 20px;
+    }
+
+    &__store-item {
+    }
+
+    &__store-link {
+    }
+
+    &__store-img {
+    }
+
+    &__copyright {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+    @include md {
+        display: grid;
+        gap: 40px;
+    }
+}

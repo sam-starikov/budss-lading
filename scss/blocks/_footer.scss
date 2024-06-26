@@ -1,12 +1,19 @@
 .footer {
-    padding: 40px 0 20px;
+    padding: clamp(20px, 0.893rem + 1.79vw, 40px) 0 20px;
 
     background-color: var(--grayscale-01);
+
+    &__desktop {
+        @include md {
+            display: none;
+        }
+    }
 
     &__body {
         display: flex;
         align-items: center;
-        gap: 126px;
+        justify-content: space-between;
+        gap: clamp(20px, -0.643rem + 9.46vw, 126px);
 
         margin-bottom: 30px;
         padding-bottom: 30px;
@@ -21,6 +28,8 @@
 
     &__controls {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
         column-gap: 20px;
     }
 
@@ -38,5 +47,12 @@
     &__nav-list {
         display: flex;
         gap: 20px;
+    }
+
+    &__marketplace-link {
+        & img {
+            width: 194px;
+            height: 57px;
+        }
     }
 }
