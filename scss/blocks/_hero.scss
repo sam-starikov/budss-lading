@@ -1,4 +1,5 @@
 .hero {
+    position: relative;
     &__body {
         display: flex;
         padding: clamp(50px, 2.554rem + 2.86vw, 82px) 0 0 clamp(0px, -0.893rem + 4.46vw, 50px);
@@ -21,6 +22,14 @@
     }
     &__bg {
         transform: translateX(60px);
+    }
+
+    &__cookie {
+        position: fixed;
+        bottom: 0;
+        left: calc(35 * 100% / 1350);
+        right: calc(35 * 100% / 1350);
+        z-index: 10;
     }
 }
 

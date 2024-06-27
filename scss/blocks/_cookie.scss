@@ -1,0 +1,59 @@
+.cookie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(20px, -0.893rem + 10.71vw, 140px);
+
+    border-radius: 16px;
+
+    padding: clamp(20px, 1.063rem + 0.94vw, 30.5px) clamp(20px, 0.536rem + 3.57vw, 60px)
+        clamp(20px, 1.063rem + 0.94vw, 30.5px) clamp(20px, 1.063rem + 0.94vw, 30.5px);
+
+    background-color: var(--grayscale-07);
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.2s ease-in;
+
+    &--active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    @include sm {
+        flex-direction: column;
+        gap: 40px;
+        // padding: 30px 20px;
+    }
+
+    &__text {
+        @include sub-title-light-20;
+        color: #383838;
+
+        max-width: 95%;
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include sm {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+    }
+
+    &__close-btn {
+        width: 26px;
+        height: 26px;
+
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+}

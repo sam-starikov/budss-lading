@@ -31,3 +31,18 @@ closeMobileMenuBtn.addEventListener('click', () => {
     mobileMenu.classList.remove('header__menu--open')
 })
 /* end */
+
+/* cookie, появление и закрытие*/
+const cookie = document.querySelector('.cookie')
+const cookieBtns = document.querySelectorAll('.cookie__btn, .cookie__close-btn')
+
+setTimeout(() => {
+    cookie.classList.add('cookie--active')
+}, 2000)
+
+for (const btn of cookieBtns) {
+    btn.addEventListener('click', () => {
+        cookie.classList.remove('cookie--active')
+    })
+}
+/* end */
