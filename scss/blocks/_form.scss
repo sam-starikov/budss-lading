@@ -1,0 +1,68 @@
+.form {
+    position: fixed;
+    top: 56px;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+
+    display: grid;
+    gap: 20px;
+
+    padding: 40px;
+    width: 417px;
+
+    color: var(--grayscale-00);
+
+    border-radius: 20px;
+    background-color: var(--grayscale-07);
+
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+
+    &--open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__body {
+        display: grid;
+        gap: 10px;
+    }
+
+    &__wrapper-input {
+        display: grid;
+        gap: 4px;
+
+        font-size: 14px;
+        font-weight: 500;
+
+        & span {
+            display: inline-block;
+            color: var(--additional-02);
+        }
+    }
+
+    &__input {
+        padding: 9px 16px;
+        border: 1px solid #f1f1f1;
+        border-radius: 14px;
+
+        &::placeholder {
+            color: #a7a7a7;
+        }
+    }
+
+    &__text {
+        color: var(--grayscale-00);
+    }
+
+    &__link {
+    }
+
+    &__close-btn {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+}

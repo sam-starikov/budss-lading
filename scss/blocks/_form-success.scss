@@ -1,0 +1,46 @@
+.form-success {
+    position: fixed;
+    top: 56px;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+
+    display: grid;
+    gap: 20px;
+
+    text-align: center;
+
+    width: 420px;
+    padding: 40px;
+
+    border-radius: 20px;
+    background-color: var(--grayscale-07);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.2s ease-in;
+
+    &--active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__img {
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 600;
+        color: var(--primary-02);
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 1.24;
+        color: var(--grayscale-02);
+    }
+
+    &__btn {
+    }
+}

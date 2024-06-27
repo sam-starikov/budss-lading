@@ -46,3 +46,33 @@ for (const btn of cookieBtns) {
     })
 }
 /* end */
+
+/* form */
+const form = document.querySelector('.form')
+const closeFormBtn = document.querySelector('.form__close-btn')
+const openFormBtn = document.querySelectorAll(
+    '.header__btn, .hero__btn, .header__menu-btn, .feedback__btn, .footer__button'
+)
+const successItem = document.querySelector('.form-success')
+const successBtn = document.querySelector('.form-success__btn')
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    form.classList.remove('form--open')
+    successItem.classList.add('form-success--active')
+})
+
+openFormBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        form.classList.add('form--open')
+    })
+})
+
+closeFormBtn.addEventListener('click', () => {
+    form.classList.remove('form--open')
+})
+
+successBtn.addEventListener('click', () => {
+    successItem.classList.remove('form-success--active')
+})
+/* end */
